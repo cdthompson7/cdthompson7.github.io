@@ -8,6 +8,7 @@
 {
     width:1200px;
     margin:0 auto; /*center-aligned*/
+    height: 
 }
 
 #slider, #slider .sliderInner {
@@ -60,11 +61,13 @@
 
 /* ------ built-in navigation bullets wrapper ------*/
 #slider .navBulletsWrapper  {
-    top:520px;
+    top:500px;
     text-align:center;
     background:none;
     position:relative;
     z-index:3;
+    padding-top: 10px;
+    display: none;
 }
 
 /* each bullet */
