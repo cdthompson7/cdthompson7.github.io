@@ -103,6 +103,9 @@ body {
     color: #422b25;
 }
 
+*:focus {
+    outline: none;
+}
 
 #header-top div {
     display: inline-block;
@@ -306,6 +309,34 @@ body {
 #bottom-menu {
     padding-bottom: 20px;
     display: block;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+#bottom-menu  p:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+     ". . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . "
+}
+
+#bottom-menu p span:first-child {
+        padding-right: 0.33em;
+        background: white;
+}
+
+#bottom-menu p span + span {
+        float: right;
+        padding-left: 0.33em;
+        background: white;
 }
 
 .about-left {
@@ -331,6 +362,7 @@ body {
 .about-img {
     padding-bottom: 25px;
     padding-top: 1em;
+    float: right;
 }
 
 #location {
@@ -339,25 +371,26 @@ body {
     padding: 25px;
     color: #fff;
     box-sizing: border-box;
+    overflow: hidden;
 }
 #location .loc1 {
     width: 25%;
     padding: 0 10px 0 0;
-    height: 150px;
+    height: 350px;
     float: left;
 }
 
 #location .loc2 {
     width: 45%;
     padding: 0 10px 0 10px;
-    height: 150px;
+    height: 350px;
     float: left;
 }
 
 #location .loc3 {
     width: 30%;
     padding: 0 0 0 10px;
-    height: 150px;
+    height: 350px;
     float: left;
 }
 
@@ -366,19 +399,88 @@ body {
     box-sizing: border-box;
 }
 
+.message {
+    width: 52%;
+    float: left;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+form textarea {
+    width: 95%;
+}
+
+form label {
+    font-size: .8em;
+    margin-bottom: 5px;
+    line-height: 1em;
+}
+
+.indentlable {
+    display: block;
+    margin-left: 38px;
+}
+  
+.indentlable::before {
+    margin-left: -35px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    margin-right: 10px;
+    background: white;
+}
+
+
+.button-submit {
+    background-color: #d3793a;
+    border: none;
+    padding: 3px 60px;
+    color: #fff;
+    margin-right:25px;
+}
+
+.button-reset {
+    background-color: #f5b142;
+    border: none;
+    padding: 3px 60px;
+    color: #fff;
+}
+
+.check {
+    width: 48%;
+    float: left;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.left-margin {
+    margin-left: 20px;
+}
+
 footer {
     text-align: right;
 }
 
 .footer-script {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.8em;
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 1.3em;
+}
+
+.bold {
+    font-weight: bold;
+    line-height: 1em;
 }
 
 
 
-
-
+#location p {
+    margin: 0 0 15px 0;
+    line-height: 1em;
+}
 
 
 
