@@ -485,8 +485,9 @@ footer {
     line-height: 1em;
 }
 
-
-
+.noborder {
+    border: none;
+}
 
 
 
