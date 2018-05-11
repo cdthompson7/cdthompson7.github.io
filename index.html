@@ -16,20 +16,16 @@
         <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
         <link href="jsimgslider/themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
         <script src="jsimgslider/themes/1/js-image-slider.js"></script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/vendor/jqvalidate/jquery.validate.min.js"></script>
-        <script src="js/vendor/jqvalidate/additional-methods.min.js"></script>
         <script>
             $.validator.setDefaults({
 		        submitHandler: function() {
 			        alert("submitted!");
 		        }
 	        });
-
-            $().ready(function() {
 		        // validate the comment form when it is submitted
 		        $("#contact_form").validate();
-		    });
         </script>
     </head>
     <body>
@@ -211,7 +207,7 @@
                             <label for="message">Message:</label><br>
                             <textarea rows="4" name="message" id="message" required></textarea>
                         </div>
-                        <div class="left-margin check">
+                        <div class="check">
                             <br>
                             <input type="checkbox" name="newsletter" id="newletter">
                             <label class="indentlabel">Check box to subscribe to our newsletter for the latest on our seasonal offerings, special events, coupons, and special daily delights.</label><br><br>
@@ -228,8 +224,7 @@
             </footer>
         </div>
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+
         <script src="js/plugins.js"></script>
         <script src="js/smoothscroll.js" async defer></script>
         <script src="js/main.js"></script>
